@@ -7,7 +7,7 @@
             
             <span>RECENTS</span>
           </h1>
-          <h1 class="recipe-title">{{ recipe.title }}</h1>
+          <h1 class="recipe-title" data-aos="zoom-out" data-aos-delay="100">{{ recipe.title }}</h1>
           <div class="image">
             <router-link v-bind:to="'/recipes/'+recipe.id">
               <img :src="`${recipe.image}`" alt />

@@ -4,14 +4,14 @@
     <b-container fluid class="header">
       <b-row>
         <b-col class="left">
-          <div class="moto">
+          <div class="moto" data-aos="zoom-out" data-aos-delay="100">
             <h1>Create your own</h1>
             <h1>
               <span>custom made</span> <br/> recipes!
             </h1>
           </div>
 
-          <p class="text" >
+          <p class="text" data-aos="zoom-out" data-aos-delay="200">
             Enjoy tailoring recipes to your own needs
             <br />and join us on a journey with an awesomely
             <br />free website Recipenow!

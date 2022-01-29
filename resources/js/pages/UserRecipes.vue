@@ -6,7 +6,7 @@
                 <div v-if="recipes.length == 0">
                     <h2>No recipes yet!</h2>
                 </div>
-                <b-col v-for="(recipe, i) in recipes" :key="i" cols="3">
+                <b-col v-for="(recipe, i) in recipes" :key="i" cols="3" data-aos="zoom-out">
                     <div class="line-row">
                         <span class="title-t">{{ recipe.title }}</span>
                     </div>

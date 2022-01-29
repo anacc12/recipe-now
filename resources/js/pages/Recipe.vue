@@ -5,9 +5,11 @@
     <div class="banner">
       <div class="recently">
         <h1 class="top-title">
-          How to:
-          <span>{{ recipe.title }}</span>
-        </h1>
+            
+            <span>How to</span>
+          </h1>
+          <h1 class="recipe-title" data-aos="zoom-out" data-aos-delay="100">{{ recipe.title }}</h1>
+
         <div class="image">
           <img :src="`${recipe.image}`" alt />
         </div>
@@ -35,9 +37,7 @@
           <div class="title-ingredient">
             <h2>Prepare now</h2>
             <div class="line-row">
-              <hr class="line" />
               <span class="number">ingredients</span>
-              <hr class="line" />
             </div>
           </div>
           <b-row class="ingredient-list">
@@ -51,7 +51,7 @@
               <h2 class="ingredient">{{ingredient.ingredient}}</h2>
             </b-col>
           </b-row>
-          <div class="tip">
+          <div class="tip" data-aos="zoom-out" data-aos-delay="100">
             <h2>
               Tip of
               <span>the day</span>
@@ -86,12 +86,11 @@
           <div class="title-instruction">
             <h2>Start cooking</h2>
             <div class="line-row">
-              <hr class="line" />
               <span class="number">instructions</span>
-              <hr class="line" />
             </div>
           </div>
-          <b-row class="instruction-list" v-for="(instruction,i) in recipe.instructions" :key="i">
+          <b-row class="instruction-list" v-for="(instruction,i) in recipe.instructions" :key="i"
+          data-aos="zoom-out" data-aos-delay="100">
             <b-col>
               <div class="instruction-number">
                 <h2 class="bold">{{i+1}}</h2>
@@ -249,6 +248,27 @@ span {
         }
       }
 
+         .top-title {
+        font-weight: 800;
+      margin-bottom: 12px;
+      font-size: 24px;
+      text-transform: uppercase;
+    }
+        .recipe-title {
+        font-weight: 700;
+      font-size: 60px;
+      text-align: center;
+      margin-bottom: 60px;
+      line-height: 60px;
+    }
+
+.title-t{
+        font-weight: 800;
+      line-height: 20px;
+      font-size: 24px;
+      text-transform: uppercase;
+      color: #2c2f31;
+}
       .tip {
         border: 1px solid rgba(177, 216, 188, 0.6);
         border-radius: 8px;

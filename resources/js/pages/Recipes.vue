@@ -4,9 +4,9 @@
     <Banner />
     <b-container class="main">
       <b-row>
-        <b-col v-for="(recipe,i) in recipes" :key="i" cols="3">
-          <div class="line-row" data-aos="zoom-out">
-            <span class="title-t">{{ recipe.title }}</span>
+        <b-col v-for="(recipe,i) in recipes" :key="i" cols="3" data-aos="zoom-out" data-aos-delay="200">
+          <div class="line-row"  >
+            <span class="title-t" >{{ recipe.title }}</span>
           </div>
           <img :src="`${recipe.image}`" alt />
           <div class="info-box">
